@@ -1,0 +1,129 @@
+@import url(../../global-scripts/src/gStyle.css);
+body {
+  background-color: rgba(152, 195, 167, 0.5019607843);
+  margin-top: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover,
+button.card-hborder:hover {
+  color: #000;
+  background-color: white;
+  animation: highlightButton 2s linear infinite;
+}
+
+.anchoredBtn {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 60%;
+}
+
+.card {
+  width: 100%;
+  min-width: 14.3rem;
+}
+
+.card-body {
+  min-width: 14.3rem;
+}
+
+.card-hborder {
+  width: 100%;
+  min-width: 14.3rem;
+  min-width: 0;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+.card-hborder img {
+  min-width: 13rem;
+  min-height: 13rem;
+  max-width: 14.75rem;
+  max-height: 14.75rem;
+}
+
+.card-header {
+  width: 100%;
+  min-width: 14.3rem;
+  display: inline-block;
+  padding-top: 4vh;
+}
+
+.card-header:hover img {
+  animation: highlightButton 2s linear infinite;
+}
+
+.footer-container {
+  background-color: white;
+  margin: auto;
+  border-top: none;
+  line-height: 250%;
+  font-size: 100%;
+  opacity: 1;
+}
+
+.header-main-container {
+  background-color: white;
+  border-bottom: none;
+}
+
+.header-main-text {
+  margin: auto;
+  font-size: 1.5rem;
+}
+
+.main-article {
+  margin: auto;
+}
+
+.main-container {
+  grid-template-rows: 88% 5%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3019607843);
+}
+
+#bgDiv {
+  background-color: rgba(152, 195, 167, 0.9058823529);
+  border: none;
+  min-width: 80vw;
+  min-height: 98vh;
+  margin: 0;
+}
+
+@keyframes highlightButton {
+  0% {
+    filter: contrast(75%);
+  }
+  50% {
+    filter: contrast(100%);
+  }
+  100% {
+    filter: contrast(75%);
+  }
+}
+@media (max-width: 720px) {
+  .footer-container {
+    height: auto;
+  }
+  .card-body > * {
+    min-width: 0;
+  }
+  .card-hborder {
+    min-width: 0;
+  }
+  .card-hborder img {
+    min-width: 0;
+    min-height: 0;
+    max-width: 13rem;
+    padding-top: 3vw;
+  }
+  .header-main-container {
+    height: 5%;
+  }
+  .main-container.gridAuto750Q {
+    grid-template-rows: auto;
+  }
+}
