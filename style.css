@@ -1,4 +1,4 @@
-@import url(../../global-scripts/src/gStyle.css);
+@import url(./gStyle.css);
 body {
   background-color: rgba(152, 195, 167, 0.5019607843);
   margin-top: 0;
